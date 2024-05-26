@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div></div>
-    <div class="grid grid-cols-2 grid-rows-2 gap-4 mx-4 mt-8 mb-4">
+    <div class="flex justify-end mt-4 mr-4"><Checkbox :checkbox-style="CheckboxStyle.Toggle" /></div>
+    <div class="grid grid-cols-2 grid-rows-2 gap-4 mx-4 my-4">
       <Card>
         <Line :data="data1" :options="option1"></Line>
       </Card>
@@ -20,6 +20,7 @@
 
 <script setup lang="ts">
 import Card from '@/components/card.vue';
+import Checkbox, { CheckboxStyle } from '@/components/checkbox.vue';
 import {
   CategoryScale,
   ChartData,
