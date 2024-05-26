@@ -2,7 +2,7 @@
   <div class="flex flex-col  min-h-dvh">
     <Navigation />
     <SideBar />
-    <div class="flex-grow">
+    <div class="flex-grow mt-12">
       <router-view v-slot="{ Component }">
         <suspense timeout="0">
           <template #default>

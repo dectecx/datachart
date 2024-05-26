@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed w-40 h-full -left-40 top-16 z-[9999] bg-green-200 duration-300 ease-in-out"
+    class="fixed w-40 h-full -left-40 top-12 z-[9999] bg-green-200 duration-300 ease-in-out"
     :class="{ 'translate-x-40': pined || collapsed }"
     @mouseenter="switchSideBar(true)"
     @mouseleave="switchSideBar(false)"
